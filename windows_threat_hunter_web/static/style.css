@@ -1,0 +1,81 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f9f9f9; /* light background for contrast */
+    color: #333333;
+}
+
+/* Headings */
+h1 {
+    color: #1E90FF; /* Dodger Blue */
+    text-align: center;
+}
+
+h2 {
+    color: #FF8C00; /* Dark Orange */
+    border-bottom: 2px solid #1E90FF;
+    padding-bottom: 5px;
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Input fields and textarea */
+textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    resize: vertical;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #1E90FF; /* Blue */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF8C00; /* Orange on hover */
+    color: white;
+}
+
+/* Output pre block */
+pre {
+    background-color: #f4f4f4;
+    border-left: 5px solid #1E90FF;
+    padding: 15px;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #1E90FF;
+}
+
+/* Links (optional) */
+a {
+    color: #FF8C00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
