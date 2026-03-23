@@ -1,0 +1,23 @@
+# Web framework
+Flask>=2.3.2
+
+# Templating engine (used by Flask)
+Jinja2>=3.1.2
+
+# Optional: colorized console output if used in Windows_Threat_Hunter
+colorama>=0.4.6
+
+# Pretty tables for formatted output
+prettytable>=3.8.0
+
+# For clipboard operations, if any (optional)
+pyperclip>=1.8.2
+
+# For regular expressions and other system operations (built-in modules, no install needed)
+# regex module (optional enhancement)
+regex>=2023.3.23
+
+# Future compatibility / utilities
+six>=1.16.0
+
+# Note: Python 3.10+ recommended, automatically selected in Render or Railway
