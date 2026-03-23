@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Windows Threat Hunter Web</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        textarea { width: 100%; }
+        select, input[type=submit] { margin-top: 10px; padding: 5px; }
+        pre { background: #f4f4f4; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Windows Threat Hunter</h1>
+    <form method="post">
+        <label for="mode">Mode:</label>
+        <select name="mode" id="mode">
+            <option value="lookup">Process Lookup</option>
+            <option value="dll">DLL Lookup</option>
+            <option value="chain">Attack Chain</option>
+        </select><br><br>
+
+        <label for="user_input">Input (multi-line allowed):</label><br>
+        <textarea name="user_input" rows="8"></textarea><br><br>
+
+        <input type="submit" value="Run">
+    </form>
+
+    <h2>Output:</h2>
+    <pre>{{ result }}</pre>
+</body>
+</html>
