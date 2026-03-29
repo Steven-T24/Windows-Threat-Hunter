@@ -5,3 +5,4 @@ prettytable>=3.8.0
 pyperclip>=1.8.2
 regex==2023.3.23
 six==1.16.0
+gunicorn==21.2.0
