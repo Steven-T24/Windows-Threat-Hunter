@@ -25,7 +25,12 @@
         <input type="submit" value="Run">
     </form>
 
-    <h2>Output:</h2>
+    <h2>{% if output %}
+    <div class="output">
+        {{ output | safe }}
+    </div>
+{% endif %}
+    </h2>
     <pre>{{ result }}</pre>
 </body>
 </html>
