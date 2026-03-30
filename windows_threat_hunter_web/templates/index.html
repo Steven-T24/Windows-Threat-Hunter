@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head> <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
     <title>Windows Threat Hunter Web</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 30px; }
-        textarea { width: 100%; }
-        select, input[type=submit] { margin-top: 10px; padding: 5px; }
-        pre { background: #f4f4f4; padding: 10px; }
-    </style>
+    <!-- Main dark-mode CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Windows Threat Hunter</h1>
+
+    <!-- Form section -->
     <form method="post">
         <label for="mode">Mode:</label>
         <select name="mode" id="mode">
@@ -25,12 +24,20 @@
         <input type="submit" value="Run">
     </form>
 
-    <h2>{% if output %}
-    <div class="output">
-        {{ output | safe }}
-    </div>
-{% endif %}
-    </h2>
-    <pre>{{ result }}</pre>
+    <!-- Output section -->
+    {% if output %}
+        <h2>Output</h2>
+        <div class="output">
+            {{ output | safe }}
+        </div>
+    {% endif %}
+
+    <!-- Result section -->
+    {% if result %}
+        <h2>Result</h2>
+        <div class="output">
+            <pre>{{ result | safe }}</pre>
+        </div>
+    {% endif %}
 </body>
 </html>
