@@ -1,47 +1,59 @@
-/* General body styling */
+/* =========================
+   Global Dark Theme
+========================= */
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
-    background-color: #f9f9f9; /* light background for contrast */
-    color: #333333;
+    background-color: #121212; /* deep dark background */
+    color: #e0e0e0; /* soft light text */
 }
 
-/* Headings */
+/* =========================
+   Headings
+========================= */
 h1 {
-    color: #1E90FF; /* Dodger Blue */
+    color: #4dabff; /* softer blue */
     text-align: center;
 }
 
 h2 {
-    color: #FF8C00; /* Dark Orange */
-    border-bottom: 2px solid #1E90FF;
+    color: #ffa94d; /* softer orange */
+    border-bottom: 2px solid #4dabff;
     padding-bottom: 5px;
 }
 
-/* Form styling */
+/* =========================
+   Form Container
+========================= */
 form {
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
-/* Input fields and textarea */
+/* =========================
+   Inputs & Selects
+========================= */
 textarea, select {
     width: 100%;
     padding: 10px;
     margin-top: 8px;
     margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #cccccc;
+    border: 1px solid #444;
     font-size: 14px;
     resize: vertical;
+    background-color: #2a2a2a;
+    color: #ffffff;
 }
 
-/* Submit button */
+/* =========================
+   Submit Button
+========================= */
 input[type="submit"] {
-    background-color: #1E90FF; /* Blue */
-    color: white;
+    background-color: #4dabff;
+    color: #121212;
     border: none;
     padding: 12px 25px;
     border-radius: 5px;
@@ -51,31 +63,58 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #FF8C00; /* Orange on hover */
-    color: white;
+    background-color: #ffa94d;
+    color: #121212;
 }
 
-/* Output pre block */
+/* =========================
+   Output Block
+========================= */
 pre {
-    background-color: #f4f4f4;
-    border-left: 5px solid #1E90FF;
+    background-color: #1a1a1a;
+    border-left: 5px solid #4dabff;
     padding: 15px;
     overflow-x: auto;
     border-radius: 5px;
+    color: #e0e0e0;
 }
 
-/* Labels */
+/* =========================
+   Labels
+========================= */
 label {
     font-weight: bold;
-    color: #1E90FF;
+    color: #4dabff;
 }
 
-/* Links (optional) */
+/* =========================
+   Links
+========================= */
 a {
-    color: #FF8C00;
+    color: #ffa94d;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* =========================
+   Scrollbar (optional polish)
+========================= */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4dabff;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffa94d;
 }
